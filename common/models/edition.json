@@ -1,0 +1,54 @@
+{
+  "name": "edition",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "author": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    },
+    "tags": {
+      "type": [
+        "string"
+      ]
+    },
+    "year": {
+      "type": "number",
+      "required": true
+    },
+    "publisher": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "files": {
+      "type": [
+        "object"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

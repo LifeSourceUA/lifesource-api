@@ -1,0 +1,18 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongodb": {
+    "database": "lifesource-api",
+    "name": "mongodb",
+    "connector": "mongodb"
+  },
+  "file": {
+    "name": "file",
+    "connector": "loopback-component-storage",
+    "provider": "amazon",
+    "key": "zj0w/NAHbqf4CMbplLO+N1Bw5duQFND+RNpQCtC/",
+    "keyId": "AKIAJGZW2OIXZKCG5EPQ"
+  }
+}
