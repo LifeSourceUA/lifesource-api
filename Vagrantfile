@@ -8,7 +8,7 @@ Vagrant.configure(2) do |config|
     vmconfig.vm.hostname = "lifesource-api"
     vmconfig.vm.network "forwarded_port", guest: 3000, host: 3000
     vmconfig.vm.synced_folder SYNC_FOLDER, "/usr/src/lifesource/lifesource-api", create: true
-    vmconfig.vm.network :private_network, ip: "7.7.7.1"
+    vmconfig.vm.network :private_network, ip: "7.7.7.7"
 
     vmconfig.vm.provision :shell do |shell|
       shell.inline = "mkdir -p /etc/puppet/modules;
